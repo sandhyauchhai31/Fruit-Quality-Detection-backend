@@ -40,9 +40,6 @@ def preprocess_image(image_bytes):
     img_array = np.expand_dims(img_array, axis=0)
     return img_array
 
-@app.get("/")
-def read_root():
-    return {"message": "Backend is running!!"}
 
 @app.post("/predict")
 async def predict(file: UploadFile = File(...)):
