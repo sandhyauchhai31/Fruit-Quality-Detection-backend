@@ -42,7 +42,7 @@ def preprocess_image(image_bytes):
 
 @app.get("/")
 def read_root():
-    return {"message": "Backend is running!"}
+    return {"message": "Backend is running!!"}
 
 @app.post("/predict")
 async def predict(file: UploadFile = File(...)):
