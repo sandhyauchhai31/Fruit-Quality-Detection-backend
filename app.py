@@ -10,7 +10,7 @@ import time
 app = FastAPI()
 
 origins = [
-    "https://fruit-quality-detection-frontend-am.vercel.app",  
+    "https://fruit-quality-detection-frontend-xc.vercel.app/",  
     "http://localhost:5173",  
 ]
 
