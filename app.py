@@ -9,10 +9,15 @@ import time
 
 app = FastAPI()
 
+origins = [
+    "https://fruit-quality-detection-frontend-am.vercel.app",  
+    "http://localhost:5173",  
+]
+
 # Allow React frontend access
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
